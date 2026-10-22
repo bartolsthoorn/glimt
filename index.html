@@ -273,6 +273,7 @@ body::after {
   grid-template-columns: 1fr auto;
   gap: calc(var(--u) * 1.5) calc(var(--u) * 2);
 }
+.foot .cols { display: flex; flex-wrap: wrap; gap: calc(var(--u) * 1.5) calc(var(--u) * 3); }
 .foot .copy { align-self: end; text-align: right; }
 .foot .label { margin: 0 0 calc(var(--u) * 0.25); color: var(--muted); }
 .foot p { margin: 0; font-size: 0.9375rem; }
@@ -390,10 +391,16 @@ a:hover { color: var(--muted); }
   </main>
 
   <footer class="foot">
-    <div>
-      <p class="label m"><span data-lang="sv" lang="sv">Kontakt</span><span data-lang="en" lang="en" hidden>Contact</span></p>
-      <p><a href="mailto:hej@glimtinstrument.se">hej@glimtinstrument.se</a></p>
-      <p><a href="https://www.linkedin.com/company/glimt-instrument/" rel="me">LinkedIn</a></p>
+    <div class="cols">
+      <div>
+        <p class="label m"><span data-lang="sv" lang="sv">Kontakt</span><span data-lang="en" lang="en" hidden>Contact</span></p>
+        <p><a href="mailto:hej@glimtinstrument.se">hej@glimtinstrument.se</a></p>
+        <p><a href="https://www.linkedin.com/company/glimt-instrument/" rel="me">LinkedIn</a></p>
+      </div>
+      <div>
+        <p class="label m"><span data-lang="sv" lang="sv">Grundare</span><span data-lang="en" lang="en" hidden>Founder</span></p>
+        <p>Bart Olsthoorn</p>
+      </div>
     </div>
     <p class="copy">© 2026 Glimt Instrument</p>
   </footer>
