@@ -7,6 +7,7 @@ Placeholder site for Glimt, served with GitHub Pages.
 - `favicon.svg`: the square dot in the accent colour.
 - `fonts/`: Instrument Sans 400/500 for the voice and IBM Plex Mono 400/500 for labels and data, both self-hosted under the SIL Open Font License (`fonts/OFL.txt`, `fonts/OFL-ibm-plex-mono.txt`). No requests to Google or any other third party, no cookies.
 - `tia-board.webp`: Fig. 02, the transimpedance amplifier board, rendered from the KiCad layout in `../STM/tia-board/layout` with `kicad-cli pcb render` (perspective, rotate -52,0,28, zoom 0.62, pivot 0,-1,0, high quality, transparent). For the render only, a copy of the board gets a stackup with a black solder mask and the SMA footprints get the library's Amphenol 132289 model, since the Linx footprint has none. The copper's yellow is then shifted toward the page's gold, cropped and saved as WebP.
+- `robots.txt`, `sitemap.xml`: allow all crawlers and list the one page, for Google Search Console. Bump `lastmod` when the page changes.
 - `.nojekyll`: serve the files as they are.
 
 ## Design system
